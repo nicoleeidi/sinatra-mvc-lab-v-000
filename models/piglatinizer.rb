@@ -1,16 +1,16 @@
 class PigLatinizer
   attr_accessor :text
-  def initialize(text)
-    @text=text
-  end
+
   def vowel(l)
     if l == "a"||l =="e"||l == "O"||l =="i"||l =="o"||l =="u"||l =="A"||l =="I"||l =="E"||l =="U"
       return true
     else
       return false
-  def convert
-    #if text.include?(" ")
-      array= @text.split(" ")
+    end
+  end
+  def piglatinize(text)
+
+      array= text.split(" ")
     newarray= array.map do |word|
 #binding.pry
       #if word[0] == "a"||word[0] =="e"||word[0] == "O"||word[0] =="i"||word[0] =="o"||word[0] =="u"||word[0] =="A"||word[0] =="I"||word[0] =="E"||word[0] =="U"
@@ -41,17 +41,11 @@ class PigLatinizer
          word.slice!(0,4)
          word += first + second + third + fourth + "ay"
 
-
       # word.chars.map do |letter|# or word.each_char
         #           if letter== "a"||letter=="e"||letter=="i"||letter="o"||letter=="u"
 
       end
     end
-
     newarray.join(" ")
-
-  # else
-  # end
-
   end
 end
