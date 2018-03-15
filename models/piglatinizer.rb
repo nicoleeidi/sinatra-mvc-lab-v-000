@@ -3,6 +3,8 @@ class PigLatinizer
   # def initialize(text)
   #   @text=text
   # end
+  def initialize
+  end
   def vowel(l)
     if l == "a"||l =="e"||l == "O"||l =="i"||l =="o"||l =="u"||l =="A"||l =="I"||l =="E"||l =="U"
       return true
