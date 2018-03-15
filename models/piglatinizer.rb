@@ -8,15 +8,15 @@ class PigLatinizer
       array= @text.split(" ")
     newarray= array.map do |word|
 #binding.pry
-      if word[0] != "a"||"e"||"i"||"o"||"u"||"A"||"I"||"E"||"U"||"O"
-      first= word.slice(0)
-      word.slice!(0)
-      word += first
-      word += "ay"
+      if word[0] == "a"||word[0] =="e"||word[0] == "O"||word[0] =="i"||word[0] =="o"||word[0] =="u"||word[0] =="A"||word[0] =="I"||word[0] =="E"||word[0] =="U"
+        word += "way"
 
       else
-
-      word += "way"
+        binding.pry
+        first= word.slice(0)
+        word.slice!(0)
+        word += first
+        word += "ay"
 
       end
     end
