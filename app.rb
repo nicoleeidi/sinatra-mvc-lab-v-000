@@ -8,8 +8,8 @@ class App < Sinatra::Base
   post '/piglatinize' do
     text_from_user= params[:user_phrase]
     binding.pry
-    instance= PigLatinizer.new
-    @piglatinized= instance.piglatinize(text_from_user)
+    instance_of_piglatinizer= PigLatinizer.new
+    @piglatinized= instance_of_piglatinizer.piglatinize(text_from_user)
     erb :newview
   end
 end
