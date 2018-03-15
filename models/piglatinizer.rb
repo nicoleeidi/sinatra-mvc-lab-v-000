@@ -9,6 +9,7 @@ class PigLatinizer
     else
       return false
     end
+  end
   def convert
     #if text.include?(" ")
       array= @text.split(" ")
