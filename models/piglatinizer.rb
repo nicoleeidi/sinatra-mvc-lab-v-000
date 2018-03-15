@@ -8,9 +8,9 @@ class PigLatinizer
       return false
     end
   end
-  def convert
+  def convert(text)
 
-      array= @text.split(" ")
+      array= text.split(" ")
     newarray= array.map do |word|
 #binding.pry
       #if word[0] == "a"||word[0] =="e"||word[0] == "O"||word[0] =="i"||word[0] =="o"||word[0] =="u"||word[0] =="A"||word[0] =="I"||word[0] =="E"||word[0] =="U"
