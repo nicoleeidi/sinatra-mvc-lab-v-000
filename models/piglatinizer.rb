@@ -41,17 +41,11 @@ class PigLatinizer
          word.slice!(0,4)
          word += first + second + third + fourth + "ay"
 
-
       # word.chars.map do |letter|# or word.each_char
         #           if letter== "a"||letter=="e"||letter=="i"||letter="o"||letter=="u"
 
       end
     end
-
     newarray.join(" ")
-
-  # else
-  # end
-
   end
 end
