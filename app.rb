@@ -9,7 +9,7 @@ class App < Sinatra::Base
     text_from_user= params[:user_phrase]
     binding.pry
     @text_from_user= PigLatinizer.new
-    @text_from_user.piglatinize(text_from_user)
+    @piglatinized= @text_from_user.piglatinize(text_from_user)
     erb :newview
   end
 end
