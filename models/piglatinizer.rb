@@ -12,7 +12,7 @@ class PigLatinizer
     end
   end
   def convert
-    #if text.include?(" ")
+
       array= @text.split(" ")
     newarray= array.map do |word|
 #binding.pry
