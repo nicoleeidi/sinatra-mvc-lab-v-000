@@ -8,7 +8,7 @@ class PigLatinizer
       return false
     end
   end
-  def convert(text)
+  def piglatinize(text)
 
       array= text.split(" ")
     newarray= array.map do |word|
