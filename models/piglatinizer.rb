@@ -1,8 +1,5 @@
 class PigLatinizer
   attr_accessor :text
-  def initialize(text)
-    @text=text
-  end
 
   def vowel(l)
     if l == "a"||l =="e"||l == "O"||l =="i"||l =="o"||l =="u"||l =="A"||l =="I"||l =="E"||l =="U"
